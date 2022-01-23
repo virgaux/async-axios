@@ -25,9 +25,9 @@ exports.get= async function (path,config) {
             }
         );
     });
-  }     
+  } 
   
-exports.getRaw= async function (config) {
+exports.request= async function (config) {
     return new Promise(async (resolve, reject) => {
         await axios.request(config).then(
             (response) => {
@@ -38,7 +38,8 @@ exports.getRaw= async function (config) {
             }
         );
     });
-  }   
+  }  
+
   
 exports.delete= async function (path,config) {
     return new Promise(async (resolve, reject) => {
@@ -52,7 +53,8 @@ exports.delete= async function (path,config) {
         );
     });
   } 
-  exports.head= async function (path,config) {
+
+exports.head= async function (path,config) {
     return new Promise(async (resolve, reject) => {
         await axios.head(path, config).then(
             (response) => {
@@ -65,7 +67,7 @@ exports.delete= async function (path,config) {
     });
   } 
 
-  exports.options= async function (path,config) {
+exports.options= async function (path,config) {
     return new Promise(async (resolve, reject) => {
         await axios.options(path, config).then(
             (response) => {

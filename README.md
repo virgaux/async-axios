@@ -1,7 +1,7 @@
 # async-axios
 Asynchronous method for axios using bluebird promise module. 
 
-```
+```js
 const asyAx = require('async-axios')
 
 var data = asyAx.getData(URL,config) 

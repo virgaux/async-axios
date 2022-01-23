@@ -1,6 +1,6 @@
 {
   "name": "async-axios",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Asynchronous method for axios using bluebird promise module. ",
   "main": "index.js",
   "scripts": {
